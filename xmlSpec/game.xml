@@ -1,0 +1,483 @@
+<?xml version = "1.0"?>
+<GameData>
+<!-- screenTitle is also used to identify you and your animation. 
+     So make sure to include your name as part of the screenTitle -->
+<title>Not Grand Theft Alien Doom Resurrection Duty Calls to the Souls of Battlefront MLG</title>
+<maxStringSize>50</maxStringSize>
+
+<frameCapOn>true</frameCapOn>
+<period>17</period>
+
+<maxFrames>600</maxFrames>
+<username>jwk</username>
+
+<view>
+  <width>850</width>
+  <height>480</height>
+</view>
+
+<world>
+  <width>2000</width>
+  <height>800</height>
+</world>
+
+<back>
+  <file>assets/elmofire.bmp</file>
+  <factor>2</factor>
+  <transparency>false</transparency>
+</back>
+
+<flames>
+  <file>assets/flames.png</file>
+  <factor>1</factor>
+  <transparency>true</transparency>
+</flames>
+
+<font name="font">
+  <file>fonts/DU30.otf</file>
+  <size>24</size>
+  <red>255</red>
+  <green>0</green>
+  <blue>0</blue>
+  <alpha>0</alpha>
+</font>
+
+<Fireball>
+  <file>assets/fireball.bmp</file>
+  <startLoc x="1034" y="528"/>
+  <frames>16</frames>
+  <imageWidth>64</imageWidth>
+  <imageHeight>64</imageHeight>
+  <frameInterval>50</frameInterval>
+  <speedX>200</speedX>
+  <speedY>200</speedY>
+  <transparency>true</transparency>
+</Fireball>
+
+<Bigbird>
+  <file>assets/Bigbird.bmp</file>
+  <startLoc x="227" y="240"/>
+  <speedX>300</speedX>
+  <speedY>300</speedY>
+  <transparency>true</transparency>
+</Bigbird>
+
+<Player>
+	<file>assets/Player.png</file>
+	<startLoc x="42" y="400"/>
+	<frames>8</frames>
+	<imageWidth>45</imageWidth>
+	<imageHeight>64</imageHeight>
+	<frameInterval>50</frameInterval>
+	<speedX>0</speedX>
+	<speedY>0</speedY>
+	<moveSpeed>250</moveSpeed>
+	<transparency>true</transparency>
+	<acceleration>10</acceleration>
+	<HP>100</HP>
+	<MaxHP>100</MaxHP>
+	<StartAmmo>5</StartAmmo>
+	<MaxAmmo>10</MaxAmmo>
+	<WeaponCap>2</WeaponCap>
+	<WeaponCount>2</WeaponCount>
+	<Weapons>
+		<W0><Name>Gun</Name></W0>
+		<W1><Name>Flamethrower</Name></W1>
+	</Weapons>
+	<Chunk>
+		<size>9</size><distance>100</distance><randomness>100</randomness>
+		<minspeed>50</minspeed>
+	</Chunk>
+</Player>
+
+<!-- I will implement files for the HUD later on -->
+<HUD>
+	<files>
+		<FileQuantity>0</FileQuantity>
+		<F0><file></file><pos></pos><size></size></F0>
+		<F1><file></file><pos></pos><size></size></F1>
+		<F2><file></file><pos></pos><size></size></F2>
+	</files>
+	<controls>
+		<ControlQuantity>9</ControlQuantity>
+		<C0><Action>Move Left</Action><Button>A</Button><Position x="700" y="20"/><Fontsize>16</Fontsize><Color r="0" g="255" b="0"/></C0>
+		<C1><Action>Move Right</Action><Button>D</Button><Position x="700" y="36"/><Fontsize>16</Fontsize><Color r="0" g="255" b="0"/></C1>
+		<C2><Action>Move Up</Action><Button>W</Button><Position x="700" y="52"/><Fontsize>16</Fontsize><Color r="0" g="255" b="0"/></C2>
+		<C3><Action>Move Down</Action><Button>S</Button><Position x="700" y="68"/><Fontsize>16</Fontsize><Color r="0" g="255" b="0"/></C3>
+		<C4><Action>Turn</Action><Button>Move Mouse</Button><Position x="700" y="84"/><Fontsize>16</Fontsize><Color r="0" g="255" b="0"/></C4>
+		<C5><Action>Shoot</Action><Button>Left Click</Button><Position x="700" y="100"/><Fontsize>16</Fontsize><Color r="0" g="255" b="0"/></C5>
+		<C6><Action>Suicide</Action><Button>E</Button><Position x="700" y="116"/><Fontsize>16</Fontsize><Color r="0" g="255" b="0"/></C6>
+		<C7><Action>God Mode</Action><Button>Space</Button><Position x="700" y="132"/><Fontsize>16</Fontsize><Color r="0" g="255" b="0"/></C7>
+		<C8><Action>Restart</Action><Button>R</Button><Position x="700" y="148"/><Fontsize>16</Fontsize><Color r="0" g="255" b="0"/></C8>
+	</controls>
+	<fps>
+		<color r="0" g="0" b="255"/>
+		<fontsize>16</fontsize>
+		<position x="0" y="0"/>
+	</fps>
+	<name>
+		<text>Wade King</text>
+		<color r="0" g="0" b="255"/>
+		<fontsize>24</fontsize>
+		<position x="5" y="450"/>
+	</name>
+	<HP>
+		<text>Health: </text>
+		<color r="255" g="0" b="0"/>
+		<fontsize>24</fontsize>
+		<position x="377" y="450"/>
+	</HP>
+	<Ammo>
+		<text>Ammo: </text>
+		<color r="255" g="0" b="0"/>
+		<fontsize>24</fontsize>
+		<position x="377" y="425"/>
+	</Ammo>
+	<Weapon>
+		<text>Weapon: </text>
+		<color r="255" g="0" b="0"/>
+		<fontsize>24</fontsize>
+		<position x="550" y="450"/>
+	</Weapon>
+</HUD>
+	
+<TickleElmo>
+	<file>assets/tickleelmosmall.png</file>
+	<startLoc x="200" y="300"/>
+	<frames>1</frames>
+	<imageWidth>64</imageWidth>
+	<imageHeight>48</imageHeight>
+	<frameInterval>50</frameInterval>
+	<speedX>0</speedX>
+	<speedY>0</speedY>
+	<transparency>true</transparency>
+	<sightrange>200</sightrange>
+	<moveSpeed>170</moveSpeed>
+	<Chunk>
+		<size>9</size><distance>100</distance><randomness>100</randomness>
+		<minspeed>50</minspeed>
+	</Chunk>
+</TickleElmo>
+
+<Enemy>
+	<file>assets/charizard.png</file>
+	<startLoc x="200" y="300"/>
+	<frames>4</frames>
+	<imageWidth>128</imageWidth>
+	<imageHeight>84</imageHeight>
+	<frameInterval>50</frameInterval>
+	<speedX>0</speedX>
+	<speedY>0</speedY>
+	<transparency>true</transparency>
+	<sightrange>200</sightrange>
+	<moveSpeed>220</moveSpeed>
+	<Chunk>
+		<size>9</size><distance>100</distance><randomness>100</randomness>
+		<minspeed>50</minspeed>
+	</Chunk>
+</Enemy>
+
+<Boss>
+	<file>assets/Xenobird.png</file>
+	<startLoc x="200" y="300"/>
+	<frames>1</frames>
+	<imageWidth>280</imageWidth>
+	<imageHeight>452</imageHeight>
+	<frameInterval>50</frameInterval>
+	<speedX>0</speedX>
+	<speedY>0</speedY>
+	<transparency>true</transparency>
+	<sightrange>-1</sightrange>
+	<moveSpeed>0</moveSpeed>
+	<Chunk>
+		<size>100</size><distance>100</distance><randomness>100</randomness>
+		<minspeed>50</minspeed>
+	</Chunk>
+</Boss>	
+
+<BossTactics>
+	<AggroRange>700</AggroRange>
+	<WaveSize>15</WaveSize>
+	<WaveTimer>5</WaveTimer>
+	<SummonTimer>3</SummonTimer>
+	<Spit></Spit>
+</BossTactics>
+
+<EnemyInfo>
+
+	<EnemyQuantity>12</EnemyQuantity>
+	<Type>
+		<P0>Enemy</P0>
+		<P1>Enemy</P1>
+		<P2>Enemy</P2>
+		<P3>Enemy</P3>
+		<P4>Enemy</P4>
+		<P5>Enemy</P5>
+		<P6>TickleElmo</P6>
+		<P7>TickleElmo</P7>
+		<P8>TickleElmo</P8>
+		<P9>TickleElmo</P9>
+		<P10>TickleElmo</P10>
+		<P11>TickleElmo</P11>
+	</Type>
+	<Pos>
+		<P-1><x>1750</x><y>200</y><angle>0</angle></P-1>
+		<P0><x>670</x><y>120</y><angle>90</angle></P0>
+		<P1><x>685</x><y>120</y><angle>45</angle></P1>
+		<P2><x>1428</x><y>32</y><angle>60</angle></P2>
+		<P3><x>200</x><y>100</y><angle>-160</angle></P3>
+		<P4><x>1687</x><y>712</y><angle>-270</angle></P4>
+		<P5><x>780</x><y>450</y><angle>-270</angle></P5>
+		<P6><x>679</x><y>142</y><angle>-270</angle></P6>
+		<P7><x>674</x><y>113</y><angle>-270</angle></P7>
+		<P8><x>1687</x><y>700</y><angle>-270</angle></P8>
+		<P9><x>1330</x><y>738</y><angle>-270</angle></P9>
+		<P10><x>1422</x><y>18</y><angle>-270</angle></P10>
+		<P11><x>780</x><y>456</y><angle>-270</angle></P11>
+	</Pos>
+	<Stats>
+		<P-1><sightrange>-1</sightrange><attackrange>30</attackrange></P-1>
+		<P0><sightrange>200</sightrange><attackrange>30</attackrange></P0>
+		<P1><sightrange>200</sightrange><attackrange>30</attackrange></P1>
+		<P2><sightrange>200</sightrange><attackrange>30</attackrange></P2>
+		<P3><sightrange>218</sightrange><attackrange>30</attackrange></P3>
+		<P4><sightrange>200</sightrange><attackrange>30</attackrange></P4>
+		<P5><sightrange>400</sightrange><attackrange>30</attackrange></P5>
+		<P6><sightrange>216</sightrange><attackrange>5</attackrange></P6>
+		<P7><sightrange>216</sightrange><attackrange>5</attackrange></P7>
+		<P8><sightrange>216</sightrange><attackrange>5</attackrange></P8>
+		<P9><sightrange>216</sightrange><attackrange>5</attackrange></P9>
+		<P10><sightrange>216</sightrange><attackrange>5</attackrange></P10>
+		<P11><sightrange>216</sightrange><attackrange>5</attackrange></P11>
+	</Stats>	
+</EnemyInfo>
+
+
+
+<Medkit>
+	<file>assets/Medkit.png</file>
+	<transparency>true</transparency>
+	<Chunk>
+		<size>9</size><distance>100</distance><randomness>100</randomness>
+		<minspeed>50</minspeed>
+	</Chunk>
+</Medkit>
+
+<Ammo>
+	<file>assets/Ammo.png</file>
+	<transparency>true</transparency>
+	<Chunk>
+		<size>9</size><distance>100</distance><randomness>100</randomness>
+		<minspeed>50</minspeed>
+	</Chunk>
+</Ammo>
+
+<GodGunPart>
+	<file>assets/GodGunParts.png</file>
+	<transparency>true</transparency>
+	<Chunk>
+		<size>9</size><distance>100</distance><randomness>100</randomness>
+		<minspeed>50</minspeed>
+	</Chunk>
+</GodGunPart>
+
+<ResourceInfo>
+	<Medkit>
+		<MedkitQuantity>4</MedkitQuantity>
+		<Medkit0>
+			<x>120</x><y>400</y><Health>19</Health>
+		</Medkit0>
+		<Medkit1>
+			<x>900</x><y>40</y><Health>23</Health>
+		</Medkit1>
+		<Medkit2>
+			<x>120</x><y>410</y><Health>26</Health>
+		</Medkit2>
+		<Medkit3>
+			<x>300</x><y>80</y><Health>42</Health>
+		</Medkit3>
+	</Medkit>
+	<Ammo>
+		<AmmoQuantity>8</AmmoQuantity>
+		<Ammo0>
+			<x>120</x><y>340</y><Bullets>12</Bullets>
+		</Ammo0>
+		<Ammo1>
+			<x>956</x><y>250</y><Bullets>19</Bullets>
+		</Ammo1>
+		<Ammo2>
+			<x>875</x><y>410</y><Bullets>5</Bullets>
+		</Ammo2>
+		<Ammo3>
+			<x>359</x><y>210</y><Bullets>16</Bullets>
+		</Ammo3>
+		<Ammo4>
+			<x>1746</x><y>210</y><Bullets>16</Bullets>
+		</Ammo4>
+		<Ammo5>
+			<x>700</x><y>479</y><Bullets>16</Bullets>
+		</Ammo5>
+		<Ammo6>
+			<x>359</x><y>710</y><Bullets>16</Bullets>
+		</Ammo6>
+		<Ammo7>
+			<x>0</x><y>345</y><Bullets>16</Bullets>
+		</Ammo7>
+	</Ammo>
+	
+	<GodGunPart>
+		<GodGunPartQuantity>8</GodGunPartQuantity>
+		<GodGunPart0>
+			<x>540</x><y>340</y>
+		</GodGunPart0>
+		<GodGunPart1>
+			<x>679</x><y>112</y>
+		</GodGunPart1>
+		<GodGunPart2>
+			<x>72</x><y>249</y>
+		</GodGunPart2>
+		<GodGunPart3>
+			<x>1800</x><y>480</y>
+		</GodGunPart3>
+		<GodGunPart4>
+			<x>1700</x><y>700</y>
+		</GodGunPart4>
+		<GodGunPart5>
+			<x>1400</x><y>12</y>
+		</GodGunPart5>
+		<GodGunPart6>
+			<x>789</x><y>456</y>
+		</GodGunPart6>
+		<GodGunPart7>
+			<x>1324</x><y>742</y>
+		</GodGunPart7>
+	</GodGunPart>
+</ResourceInfo>
+
+<ProjectileInfo>
+	<NumTypes>1</NumTypes>
+	<Types><P0>Fire</P0></Types>	
+	<Bullet>	
+		<file>assets/Bullet.png</file>
+		<Damage>5</Damage>
+		<Speed>800</Speed>
+		<Range>2000</Range>
+		<LifeSpan>3</LifeSpan>
+		<PoolSize>10</PoolSize>
+		<transparency>true</transparency>
+		<frames>1</frames>
+		<imageWidth>12</imageWidth>
+		<imageHeight>7</imageHeight>
+		<frameInterval>50</frameInterval>
+		<Penetrate>1</Penetrate>
+	</Bullet>
+	<Fire>	
+		<file>assets/flamethrowerAmmo_real.png</file>
+		<Damage>5</Damage>
+		<Speed>250</Speed>
+		<Range>200</Range>
+		<LifeSpan>1</LifeSpan>
+		<PoolSize>100</PoolSize>
+		<transparency>true</transparency>
+		<frames>8</frames>
+		<imageWidth>64</imageWidth>
+		<imageHeight>48</imageHeight>
+		<frameInterval>50</frameInterval>
+		<Penetrate>5</Penetrate>
+	</Fire>
+	<GodAmmo>	
+		<file>assets/fireball.bmp</file>
+		<Damage>5</Damage>
+		<Speed>1000</Speed>
+		<Range>9999</Range>
+		<LifeSpan>9999</LifeSpan>
+		<PoolSize>10</PoolSize>
+		<transparency>true</transparency>
+		<frames>16</frames>
+		<imageWidth>64</imageWidth>
+		<imageHeight>64</imageHeight>
+		<frameInterval>50</frameInterval>
+		<Penetrate>9999</Penetrate>
+	</GodAmmo>
+
+</ProjectileInfo>
+
+<Weapons>
+	<NumTypes>2</NumTypes>
+	<Types>
+		<T0>Gun</T0>
+		<T1>Flamethrower</T1>
+	</Types>
+	<TypeDefs>
+		<Flamethrower>
+			<Sound>Fire</Sound>
+			<ProjectileType>Fire</ProjectileType>
+			<Arc>10</Arc>
+			<ArcSize>45</ArcSize>
+			<FireSpeed></FireSpeed>
+			<StartAmmo>10</StartAmmo>
+			<MaxAmmo></MaxAmmo>
+		</Flamethrower>
+		<Gun>
+			<Sound>Shoot</Sound>
+			<ProjectileType>Bullet</ProjectileType>
+			<Arc>1</Arc>
+			<ArcSize>45</ArcSize>
+			<FireSpeed></FireSpeed>
+			<StartAmmo>20</StartAmmo>
+			<MaxAmmo></MaxAmmo>
+		</Gun>
+		<GodGun>
+			<PartReq>2</PartReq>
+			<Sound>Shoot</Sound>
+			<ProjectileType>GodAmmo</ProjectileType>
+			<Arc>1</Arc>
+			<ArcSize>45</ArcSize>
+			<FireSpeed></FireSpeed>
+			<StartAmmo>1</StartAmmo>
+			<MaxAmmo></MaxAmmo>
+		</GodGun>
+	</TypeDefs>
+	
+
+</Weapons>
+
+<Sounds>
+	<Music>
+		<filename>assets/Sounds/Trivium.wav</filename>
+		<volume>75</volume>
+	</Music>
+	<SoundQuantity>6</SoundQuantity>
+	<S0>
+		<name>Shoot</name>
+		<filename>assets/Sounds/cannon.wav</filename>
+		<volume>50</volume>
+	</S0>
+	<S1>
+		<name>Explode</name>
+		<filename>assets/Sounds/explosion.wav</filename>
+		<volume>30</volume>
+	</S1>
+	<S2>
+		<name>Pickup</name>
+		<filename>assets/Sounds/pickup.wav</filename>
+		<volume>32</volume>
+	</S2>
+	<S3>
+		<name>Fire</name>
+		<filename>assets/Sounds/Boom.wav</filename>
+		<volume>52</volume>
+	</S3>
+	<S4>
+		<name>Airhorn</name>
+		<filename>assets/Sounds/airhorn.wav</filename>
+		<volume>56</volume>
+	</S4>
+	<S5>
+		<name>Scream</name>
+		<filename>assets/Sounds/wilhelm.wav</filename>
+		<volume>50</volume>
+	</S5>
+
+</Sounds>
+</GameData>

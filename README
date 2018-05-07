@@ -1,0 +1,119 @@
+Name: Wade King
+
+Course: CPSC 4160
+
+Clemson Email Address: jwk@clemson.edu
+
+Project no: 6
+
+Project due date: December 13 8AM
+
+Project description: Add sounds and god mode to the project. The rest of the 
+	project will be used to add polish and extra features to make the game 
+	more fun and robust.
+
+The easiest part of this project: Adding a god mode.
+
+Problems that I had in completing this project: Finding sounds and editing them
+	was difficult because the lab machines lack audio editing software. 
+
+Works Cited (from assets):
+
+	(Images) 
+	
+	flames.png: http://www.pngmart.com/image/3394
+
+	elmofire.jpg(.bmp): http://popkey.co/m/bXKoj-why-elmo-fire
+	
+	Bigbird.png: http://muppet.wikia.com/wiki/Big_Bird
+	
+	fireball.png(.bmp): http://www.nordenfelt-thegame.com/blog/tag/tutorial/
+	
+	charizard.png(.bmp): https://www.spriters-resource.com/fullview/29593/
+	
+	Player.png: I made this myself. 
+	
+	Medkit.png: I made this myself.
+	
+	Ammo.png: I made this myself.
+	
+	Bullet.png: I made this myself.
+	
+	GodGunParts.png: I made this myself.
+	
+	flameThrowerAmmo.png (flameThrowerAmmo_real.png): 
+		https://opengameart.org/content/fireball-spell
+		
+	tickleelmo.jpeg(.png)(tickleelmosmall.png): 
+		https://thenextweb.com/shareables/2017/04/14/remove-the-fur-
+		from-a-tickle-me-elmo-and-you-get-something-truly-horrific/
+		
+	Xenomorph.png: http://deathbattlefanon.wikia.com/wiki/File:Xenomorph.png
+	
+	Xenobird.png: Spliced Xenomorph.png and bigbird.png together
+	
+	(From assets/Sounds)
+	
+	Trivium.wav: https://www.youtube.com/watch?v=MnjZqQhZYiY
+	
+	wilhelm.wav: https://freesound.org/people/Syna-Max/sounds/64939/
+	
+	pickup.wav: https://freesound.org/people/runningmind/sounds/363170/
+	
+	(Fonts)
+	
+	DU30.otf: https://www.1001freefonts.com/du30.font
+	
+	(The rest of the assets are not used in the game)
+
+Important notes: 
+	1. Sound assets can be found in assets/Sounds folder
+	2. Font assets can be found in Fonts folder
+	1. AI code can be found in the folder labeled AI
+	2. HUD code can be found in the folder called HUD
+	2. Resource code can be found in Resources folder
+	3. Explosions code can be found in folder called Explosions
+	4. Shooting code can be found in folder called Shooting
+	5. When player dies, he has a 2-second recover period in which it blinks and
+		can't die. 
+	6. You can permanently kill AI right now, but resources currently respawn
+		if destroyed by the player. 
+	7. I currently only use midpoint/distance collision. 
+	8. Images in the HUD section of the XML file is not implemented yet. 
+	9. Some of the AI looks wonky because I use edge-case values for testing 
+		and because they stop moving when attacking. For example, I use 
+		extremely low Field-of-View values for enemies that I want to put no
+		effort in chasing the player. 
+	10. The spirtes are still the same as the last project, except for the 
+		player. I am currently learning to make better-looking sprites. 
+	11. The video keeps dropping frames, so it looks very jumpy. I tired multiple
+		ways to create the video, but they all came out that way. However, in 
+		this video, I was able to show the HUD, toggling the HUD, the 
+		collisions, and the AI chasing the player and stopping to attack 
+		(with attack animations being added in a later project).
+
+Game Description:
+	My game concept has changed a ton since the time I first decided on a
+	concept. Instead of a stealth game, as originally planned, I have decided
+	to make a parody-action game. The player fights off waves of enemies spawned
+	from a boss. Along the way, the p-layer picks up containers containing
+	useful items. These (currently) include ammo, health, and parts for a 
+	weapon that can defeat the boss. There are different ammo and weapon types.
+	The player needs to defeat the boss before losing resources and becoming
+	overwhelmed by the boss' minions. The player must also be careful to not 
+	destroy all the parts of the god weapon so that they can defeat the boss.
+	The player "wins" when the boss is defeated, and loses when their health
+	drops to or below 0.
+
+Major Changes:
+
+	1. Added sounds.
+	2. Added a conclusion.
+	3. Added a boss.
+	4. Added new weapon types.
+	5. Added a restart option. 
+	6. Added enemy types.
+	7. Fixed an issue with IOmod that made loading static text to screen slow. 
+	8. Added a new resource.
+	9. Replaced many assets. 
+	10. Added god mode. 
